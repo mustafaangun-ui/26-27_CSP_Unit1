@@ -1,32 +1,28 @@
+#   Add your code here and add comments to your code
+#   to describe what each section of code is doing
+
 # import the turtle module
 import turtle as trtl
 
 # create the turtle object
 painter = trtl.Turtle()
 
-'''
-To take input: input("Message")
+circlesize = float(input("what size should the base be? "))
+pensize = float(input("what should the size of the pen be? "))
+pencolor = str(input("what color should the pen be? "))
 
-'''
-
-# Ask the user on the size of the square
-
-size = float(input("How big do you want the size of the triangle to be?"))
-
-# Ask the user on the size of the pen
-
-penSize = int(input("How big do you want the size of the painter to be?"))
-
-painter.fillcolor("red")
-
-painter.pensize(penSize)
-painter.forward(size)
-painter.left(120)
-painter.forward(size)
-painter.left(120)
-painter.forward(size)
+painter.pensize(pensize)
+painter.color(pencolor)
+painter.circle(circlesize)
+painter.left(46)
+painter.forward(147)
+painter.left(92)
+painter.forward(147)
+painter.left(92)
+painter.forward(147)
+painter.left(92)
+painter.forward(147)
 
 # create screen object and make it persist
-
 wn = trtl.Screen()
 wn.mainloop()
