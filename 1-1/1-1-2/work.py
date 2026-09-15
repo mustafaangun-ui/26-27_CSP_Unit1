@@ -22,6 +22,8 @@ painter.left(92)
 painter.forward(147)
 painter.left(92)
 painter.forward(147)
+painter.left(135)
+painter.forward(205)
 
 # create screen object and make it persist
 wn = trtl.Screen()
